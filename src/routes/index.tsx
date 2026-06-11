@@ -103,28 +103,28 @@ function accentClasses(accent: LinkBtn["accent"]) {
   switch (accent) {
     case "whatsapp":
       return {
-        wrap: "bg-[var(--whatsapp)] hover:bg-[var(--whatsapp)]/90 border-[var(--whatsapp)]/50 shadow-[0_10px_40px_-10px_oklch(0.62_0.16_150/0.6)]",
+        wrap: "bg-[var(--whatsapp)] border-[var(--whatsapp)]/30 btn-3d btn-3d-whatsapp hover:btn-3d-whatsapp-hover active:btn-3d-whatsapp-active",
         icon: "bg-white/15 text-white",
         label: "text-white",
         desc: "text-white/80",
       };
     case "gold":
       return {
-        wrap: "bg-gradient-to-br from-[var(--gold)] to-[oklch(0.70_0.16_60)] border-[var(--gold)]/40 shadow-[var(--shadow-gold)]",
+        wrap: "bg-gradient-to-br from-[var(--gold)] to-[oklch(0.70_0.16_60)] border-[var(--gold)]/30 btn-3d btn-3d-gold hover:btn-3d-gold-hover active:btn-3d-gold-active",
         icon: "bg-black/20 text-black",
         label: "text-black",
         desc: "text-black/70",
       };
     case "fire":
       return {
-        wrap: "bg-gradient-to-br from-[var(--ember)] to-[var(--fire)] border-[var(--fire)]/40 shadow-[var(--shadow-fire)]",
+        wrap: "bg-gradient-to-br from-[var(--ember)] to-[var(--fire)] border-[var(--fire)]/30 btn-3d btn-3d-fire hover:btn-3d-fire-hover active:btn-3d-fire-active",
         icon: "bg-white/15 text-white",
         label: "text-white",
         desc: "text-white/85",
       };
     default:
       return {
-        wrap: "glass-card hover:border-[var(--gold)]/40",
+        wrap: "glass-card btn-3d btn-3d-default hover:btn-3d-default-hover active:btn-3d-default-hover hover:border-[var(--gold)]/30",
         icon: "bg-[var(--gold)]/15 text-[var(--gold)]",
         label: "text-foreground",
         desc: "text-muted-foreground",
