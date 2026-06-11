@@ -336,7 +336,7 @@ function Index() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-[var(--whatsapp)] px-6 py-4 font-display text-xl text-white shadow-[0_15px_40px_-10px_oklch(0.62_0.16_150/0.7)] transition hover:scale-[1.02] active:scale-[0.98]"
+              className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-[var(--whatsapp)] px-6 py-4 font-display text-xl text-white btn-3d btn-3d-cta hover:btn-3d-cta-hover active:btn-3d-cta-active"
             >
               <MessageCircle className="h-6 w-6" strokeWidth={2.4} />
               Chamar no WhatsApp
