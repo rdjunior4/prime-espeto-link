@@ -296,7 +296,7 @@ function Index() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shrink-0 rounded-full bg-[var(--whatsapp)] px-3 py-1.5 text-[0.7rem] font-bold text-white shadow-[0_4px_14px_-2px_oklch(0.62_0.16_150/0.6)] transition hover:scale-105 active:scale-95"
+                  className="shrink-0 rounded-full bg-[var(--whatsapp)] px-3 py-1.5 text-[0.7rem] font-bold text-white btn-3d btn-3d-whatsapp hover:btn-3d-whatsapp-hover active:btn-3d-whatsapp-active"
                 >
                   Pedir agora
                 </a>
