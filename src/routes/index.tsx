@@ -165,7 +165,7 @@ function Index() {
             />
           </div>
 
-          <h1 className="font-display mt-5 text-5xl sm:text-6xl text-gradient-gold animate-float-up">
+          <h1 className="font-display mt-5 text-[45px] sm:text-6xl text-gradient-gold animate-float-up">
             Espetinho Legal Prime
           </h1>
 
