@@ -5,14 +5,13 @@ import {
   Tag,
   Instagram,
   MapPin,
-  Star,
   Flame,
   Award,
   Zap,
   ChevronRight,
 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-import logo from "@/assets/logo.png";
+const HERO_BG_URL = "http://sharkscompany.online/wp-content/uploads/2026/06/Design-sem-nome-2-scaled.png";
+const LOGO_URL = "http://sharkscompany.online/wp-content/uploads/2026/06/LOGO-SEM-FUNDO-ESPETINHO-LEGAL-PRIME.png";
 import espCarne from "@/assets/esp-carne.jpg";
 import espFrango from "@/assets/esp-frango.jpg";
 import espCalabresa from "@/assets/esp-calabresa.jpg";
@@ -33,7 +32,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Espetinho%20Legal%20Prime%20%F0%9F%94%A5";
+const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=5581987374815&text";
 
 type LinkBtn = {
   href: string;
@@ -52,8 +51,8 @@ const links: LinkBtn[] = [
     accent: "whatsapp",
   },
   {
-    href: "#cardapio",
-    label: "Ver Cardápio",
+    href: "https://www.ifood.com.br/delivery/recife-pe/espetinho-legal-prime-cordeiro/64d5ea03-e492-485f-a5cf-9b6ab21a86fd",
+    label: "Ver Cardápio iFood",
     desc: "Confira nossos espetinhos e acompanhamentos",
     Icon: UtensilsCrossed,
     accent: "gold",
@@ -66,22 +65,16 @@ const links: LinkBtn[] = [
     accent: "fire",
   },
   {
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/espetinholegalprime/",
     label: "Instagram",
     desc: "Acompanhe novidades e bastidores",
     Icon: Instagram,
   },
   {
-    href: "https://maps.google.com",
+    href: "https://share.google/CvCz4QMbY9D4ruotm",
     label: "Localização",
     desc: "Veja onde estamos",
     Icon: MapPin,
-  },
-  {
-    href: "#avaliacoes",
-    label: "Avaliações dos Clientes",
-    desc: "Veja o que falam da gente",
-    Icon: Star,
   },
 ];
 
@@ -94,7 +87,7 @@ const destaques = [
 const cardapio = [
   { nome: "Espetinho de Carne", img: espCarne, tag: "Clássico" },
   { nome: "Espetinho de Frango", img: espFrango, tag: "Tempero da casa" },
-  { nome: "Espetinho de Calabresa", img: espCalabresa, tag: "Defumado" },
+  { nome: "Espetinho de Salsichão", img: espCalabresa, tag: "Defumado" },
   { nome: "Espetinho Misto", img: espMisto, tag: "Pra dividir" },
   { nome: "Especial Prime", img: espPrime, tag: "Premium" },
 ];
@@ -147,7 +140,7 @@ function Index() {
       <section className="relative">
         <div className="absolute inset-0 -z-0">
           <img
-            src={heroBg}
+            src={HERO_BG_URL}
             alt="Espetinhos grelhando na brasa"
             width={1536}
             height={1536}
@@ -164,11 +157,11 @@ function Index() {
               style={{ background: "var(--gradient-fire)" }}
             />
             <img
-              src={logo}
+              src={LOGO_URL}
               alt="Logo Espetinho Legal Prime"
-              width={160}
-              height={160}
-              className="h-32 w-32 sm:h-40 sm:w-40 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+              width={240}
+              height={240}
+              className="h-48 w-48 sm:h-60 sm:w-60 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
             />
           </div>
 

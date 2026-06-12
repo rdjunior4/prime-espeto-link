@@ -103,10 +103,17 @@
 }
 
 @utility text-gradient-gold {
-  background: var(--gradient-gold);
+  background: linear-gradient(135deg, oklch(0.82 0.15 85), oklch(0.70 0.16 60), oklch(0.88 0.12 85), oklch(0.70 0.16 60));
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  animation: gradient-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes gradient-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 @utility text-gradient-fire {
