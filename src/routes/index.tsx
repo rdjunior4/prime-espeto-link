@@ -39,7 +39,7 @@ type LinkBtn = {
   label: string;
   desc: string;
   Icon: typeof MessageCircle;
-  accent?: "whatsapp" | "gold" | "fire" | "default";
+  accent?: "whatsapp" | "gold" | "fire" | "default" | "red";
 };
 
 const links: LinkBtn[] = [
@@ -54,6 +54,13 @@ const links: LinkBtn[] = [
     href: "https://www.ifood.com.br/delivery/recife-pe/espetinho-legal-prime-cordeiro/64d5ea03-e492-485f-a5cf-9b6ab21a86fd",
     label: "Ver Cardápio iFood",
     desc: "Confira nossos espetinhos e acompanhamentos",
+    Icon: UtensilsCrossed,
+    accent: "red",
+  },
+  {
+    href: "https://oia.99app.com/dlp9/mLQhXq?share_media=WHATSAPP",
+    label: "Pedir pelo 99 Food",
+    desc: "Peça pelo app 99",
     Icon: UtensilsCrossed,
     accent: "gold",
   },
@@ -100,6 +107,13 @@ function accentClasses(accent: LinkBtn["accent"]) {
         icon: "bg-white/15 text-white",
         label: "text-white",
         desc: "text-white/80",
+      };
+    case "red":
+      return {
+        wrap: "bg-gradient-to-br from-[var(--primary)] to-[var(--ember)] border-[var(--ember)]/30 btn-3d btn-3d-fire hover:btn-3d-fire-hover active:btn-3d-fire-active",
+        icon: "bg-white/15 text-white",
+        label: "text-white",
+        desc: "text-white/85",
       };
     case "gold":
       return {
