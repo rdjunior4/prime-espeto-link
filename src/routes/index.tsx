@@ -10,7 +10,7 @@ import {
   Zap,
   ChevronRight,
 } from "lucide-react";
-const HERO_BG_URL = "http://sharkscompany.online/wp-content/uploads/2026/06/Design-sem-nome-2-scaled.png";
+import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 import espCarne from "@/assets/esp-carne.jpg";
 import espFrango from "@/assets/esp-frango.jpg";
@@ -140,7 +140,7 @@ function Index() {
       <section className="relative">
         <div className="absolute inset-0 -z-0">
           <img
-            src={HERO_BG_URL}
+            src={heroBg}
             alt="Espetinhos grelhando na brasa"
             width={1536}
             height={1536}
