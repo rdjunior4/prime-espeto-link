@@ -153,15 +153,15 @@ function Index() {
           <div className="relative animate-float-up">
             <div
               aria-hidden
-              className="animate-ember absolute inset-0 -z-10 rounded-full blur-2xl"
+              className="animate-ember absolute inset-0 -z-10 rounded-full blur-xl opacity-40"
               style={{ background: "var(--gradient-fire)" }}
             />
             <img
               src={logo}
               alt="Logo Espetinho Legal Prime"
-              width={240}
-              height={240}
-              className="h-48 w-48 sm:h-60 sm:w-60 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+              width={320}
+              height={320}
+              className="h-64 w-64 sm:h-80 sm:w-80 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
             />
           </div>
 
@@ -310,8 +310,8 @@ function Index() {
         >
           <div
             aria-hidden
-            className="animate-ember absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full blur-3xl"
-            style={{ background: "var(--gradient-fire)", opacity: 0.4 }}
+            className="animate-ember absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full blur-2xl"
+            style={{ background: "var(--gradient-fire)", opacity: 0.2 }}
           />
           <div className="relative">
             <p className="text-xs uppercase tracking-[0.3em] text-[var(--gold)]">
