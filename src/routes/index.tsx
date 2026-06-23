@@ -153,8 +153,8 @@ function Index() {
           <div className="relative animate-float-up">
             <div
               aria-hidden
-              className="animate-ember absolute inset-0 -z-10 rounded-full blur-xl opacity-40"
-              style={{ background: "var(--gradient-fire)" }}
+              className="absolute inset-0 -z-10 rounded-full blur-md opacity-20"
+              style={{ background: "radial-gradient(circle, oklch(0.62 0.22 28 / 0.3), transparent 70%)" }}
             />
             <img
               src={logo}
