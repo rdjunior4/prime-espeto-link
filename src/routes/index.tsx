@@ -151,11 +151,6 @@ function Index() {
 
         <div className="relative mx-auto flex max-w-xl flex-col items-center px-5 pt-10 pb-8 text-center">
           <div className="relative animate-float-up">
-            <div
-              aria-hidden
-              className="absolute inset-0 -z-10 rounded-full blur-xl opacity-60"
-              style={{ background: "radial-gradient(circle, oklch(0.50 0.25 25 / 0.7), oklch(0.62 0.22 28 / 0.3) 50%, transparent 75%)" }}
-            />
             <img
               src={logo}
               alt="Logo Espetinho Legal Prime"
